@@ -5,19 +5,19 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import ConversationalRetrievalChain
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import UnstructuredFileLoader
-from langchain.document_loaders.image import UnstructuredImageLoader
+# from langchain.document_loaders.image import UnstructuredImageLoader
 from langchain.document_loaders import ImageCaptionLoader
 from langchain.docstore.document import Document
-from langchain_experimental.text_splitter import SemanticChunker
+# from langchain_experimental.text_splitter import SemanticChunker
 from langchain.memory import ConversationBufferMemory
 from langchain_community.document_loaders import WebBaseLoader
-from langchain.callbacks.base import BaseCallbackHandler
+# from langchain.callbacks.base import BaseCallbackHandler
 import os
 import pytube
 import openai
-from bs4 import BeautifulSoup
-from bs4.element import Comment
-import requests
+# from bs4 import BeautifulSoup
+# from bs4.element import Comment
+# import requests
 
 # class StreamHandler(BaseCallbackHandler):
 #     def __init__(self, container, initial_text=""):
