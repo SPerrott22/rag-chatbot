@@ -56,9 +56,9 @@ llm = ChatOpenAI(temperature=0.7, model_name="gpt-3.5-turbo", streaming=True) #m
 # Sidebar section for uploading files and providing a YouTube URL
 with st.sidebar:
     uploaded_files = st.file_uploader("Please upload your files", accept_multiple_files=True, type=None)
-    youtube_url = st.text_input("YouTube URL")
+    youtube_url = st.text_input("YouTube URL (Audio Only)")
     website_url = st.text_input("Website URL")
-    st.info("Please refresh the browser if you decide to upload more files to reset the session", icon="🚨")
+    st.info("Please refresh the browser if you decide to upload more files or links to reset the session", icon="🚨")
 
 # Check if files are uploaded or YouTube URL is provided
 if uploaded_files or youtube_url or website_url:
